@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Q">
+
+    <TextView
+        android:id="@+id/CountDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textSize="60sp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/CountDown"
+        android:layout_above="@+id/answerA">
+        <TextView
+            android:id="@+id/Question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/answerA"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_above="@+id/answerB"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@mipmap/button1"
+        android:text="answer"/>
+    <Button
+        android:id="@+id/answerB"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_above="@+id/answerC"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@mipmap/button1"
+        android:text="answer"/>
+    <Button
+        android:id="@+id/answerC"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_above="@+id/answerD"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@mipmap/button1"
+        android:text="answer"/>
+    <Button
+        android:id="@+id/answerD"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@mipmap/button1"
+        android:text="answer"/>
+
+</RelativeLayout>

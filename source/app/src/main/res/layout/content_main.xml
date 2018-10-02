@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/logo"
+        android:layout_centerHorizontal="true" />
+    <HorizontalScrollView
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btTopic1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/bt1"
+            android:text="Topic1"/>
+
+        <Button
+            android:id="@+id/btTopic2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/bt2"
+            android:layout_marginLeft="20dp"
+            android:text="Topic2"/>
+
+        <Button
+            android:id="@+id/btTopic3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/bt3"
+            android:layout_marginLeft="20dp"
+            android:text="Topic3"/>
+        <Button
+            android:id="@+id/btTopic4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/bt4"
+            android:layout_marginLeft="20dp"
+            android:text="Topic4"/>
+        <Button
+            android:id="@+id/btTopic5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/bt5"
+            android:layout_marginLeft="20dp"
+            android:text="Topic5"/>
+        <Button
+            android:id="@+id/btTopic6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/bt6"
+            android:layout_marginLeft="20dp"
+            android:text="Topic6"/>
+    </LinearLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>
